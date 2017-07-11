@@ -75,6 +75,11 @@ p.item-title {
   height: 170px;    /* Want ボタンが増えたので、70px から 120pxに修正 */
 }
 
+/*Want itとHave itのマージン調整*/
+.item .buttons:first-child {
+  margin-bottom: 30px;
+}
+
 /* 追加分 */
 .item .buttons form {
   display: inline-block;
