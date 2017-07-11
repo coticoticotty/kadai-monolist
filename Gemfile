@@ -38,6 +38,24 @@ gem 'bcrypt', '~> 3.1.7'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  
+  #rails consoleの表示を見やすくする。ここから↓
+  # 高機能コンソール
+  gem 'pry-rails'
+
+  # デバッガー
+  gem 'pry-byebug'
+
+  # pryの入出力に色付け
+  gem 'pry-coolline'
+  gem 'awesome_print'
+
+  # PryでのSQLの結果を綺麗に表示
+  gem 'hirb'
+  # 2byte文字で表示がずれるのを改善
+  gem 'hirb-unicode'
+  #↑ここまで
+  #あとは同じ階層に.pryrcを入れる！
 end
 
 group :development do

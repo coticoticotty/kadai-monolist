@@ -76,9 +76,9 @@ p.item-title {
 }
 
 /*Want itとHave itのマージン調整*/
-.item .buttons:first-child {
-  margin-bottom: 30px;
-}
+/*.item .panel-body .buttons {
+  margin-bottom: 10px;
+}*/
 
 /* 追加分 */
 .item .buttons form {
@@ -90,6 +90,7 @@ p.item-title {
 .user-profile .name {
   margin-bottom: 20px;
 }
+
 .user-profile .name h1 {
   text-shadow: 1px 1px 1px #fff;
   font-weight: bold;
