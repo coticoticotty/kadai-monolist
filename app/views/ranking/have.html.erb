@@ -10,15 +10,16 @@
             </div>
             <div class="panel-body">
               <p class="item-title"><%= link_to item.name, item %></p>
+              <div class="buttons text-center">
               <% if logged_in? %>
-              <div class="buttons text-center">
-                  <%= render 'ownerships/want_button', item: item %>
-              </div>
-              <div class="buttons text-center">
-                  <%= render 'ownerships/have_button', item: item %>
+                <%= render 'ownerships/want_button', item: item %>
               <% end %>
               </div>
-
+              <div class="buttons text-center">
+              <% if logged_in? %>
+                <%= render 'ownerships/have_button', item: item %>
+              <% end %>
+              </div>
             </div>
             <div class="panel-footer">
               <p class="text-center"><%= index+1 %>位: <%= @ranking_counts[item.id] %> Have</p>
